@@ -38,3 +38,14 @@ const job = document.getElementById("job");
 const info = document.getElementById("info");
 
 const prevBtn = document.querySelector(".prev-btn");
+
+// set starting item
+
+let currentItem = 3;
+
+//load initial item
+
+window.addEventListener("DOMContentLoaded", function () {
+  const item = reviews[currentItem];
+  img.src = item.img;
+});
